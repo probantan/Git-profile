@@ -2,7 +2,7 @@ import { TestBed, inject } from '@angular/core/testing';
 
 import { ProfService } from './prof.service';
 
-describe('ProfService', () => {
+describe('PrifileService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [ProfService]

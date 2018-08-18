@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfService } from '../prof.service';
 
 @Component({
   selector: 'app-profile',
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  prof:any[];
+  repos:any[];
 
-  constructor() { }
+  constructor(private profService: ProfService ) {
+    this.profService.getProfInfo().subscribe(prof => {
+    console.log(prof)
+    this.prof = prof;
+  });
 
-  ngOnInit() {
+  this.profService.getProfRepos().subscribe(repos => {
+    console.log(repos);
+    this.repos = repos;
+
+ });
+  }
+  ngOnInit(){
   }
 
 }

@@ -1,3 +1,61 @@
-<p>
-  profile works!
+
+<div *ngIf="prof">
+  
+<div class="panel panel-primary">
+
+<div class="panel-heading">
+   
+  {{prof.name}}  ({{prof.login}})
+  <div class="com">
+  <span *ngIf="prof.company"><small>CEO at {{prof.company}}</small></span>
+</div>
+</div>
+  </div>
+</div>
+  
+ 
+
+<img src="{{prof.avatar_url}}" alt="">
+
+
+<div class="wrapper">
+   
+    
+     
+<ul>
+  <li class="item" *ngIf="prof.bio" >{{prof.bio}}</li>
+  <li class="item"*ngIf="prof.blog"  > <a href="{{prof.blog}}" target="_blank">{{prof.blog}}</a></li>
+  <li class="item"*ngIf="prof.hireable" >Available for hire</li>
+  <li class="item">Protus.bantan@gmail.com</li>
+</ul>
+</div>
+  
+<div class="col-md-4">
+  <div>
+    <p>
+<span class="lebal label-default">{{prof.followers}} Followers</span>
+
+<span class="lebal label-primary">Following{{prof.following}}</span>
+
+<span class="lebal label-success">{{prof.public_gists}} Public gists</span>
+<span class="lebal label-info">{{prof.public_repos}} Public Repos</span>
 </p>
+<p><a href="{{prof.html_url}}"target="_blank" class="btn btn-success btn-sm">Vie Profile on github</a></p>
+<div class= "panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Repos</h3>
+
+</div>
+<div class="panel-body" *ngFor="let repo of repos">
+  <p>
+{{repo.name}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning">View this project on github</a>
+
+  </p>
+
+<p>{{repo.description}}</p>
+</div>
+
+</div>
+
+</div>
+</div>
