@@ -5,9 +5,10 @@ import "rxjs/add/operator/map";
 export class ProfService {
   private username: string;
   private clientid = "0eb78d8ad64386d908df";
-  private clientsecret = "8e1d5bf067aac43091a46147198322a4489c5483";
+  private clientsecret = "5a6b2327b90494d005a70edc506d2eed3f8318e7";
 
   constructor(private http: Http) {
+    console.log('Service ready');
     this.username = "probantan";
   }
 
@@ -24,4 +25,9 @@ export class ProfService {
           "&clientsecret + this.clientsecret"  )
       .map(res => res.json());
   }
+  updateProf(username:string){
+   this.username=username;
+
+  }
+
 }

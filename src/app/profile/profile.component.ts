@@ -9,18 +9,25 @@ import { ProfService } from '../prof.service';
 export class ProfileComponent implements OnInit {
   prof:any[];
   repos:any[];
-
+  data:any=[];
+  username:string
   constructor(private profService: ProfService ) {
-    this.profService.getProfInfo().subscribe(prof => {
-    console.log(prof)
-    this.prof = prof;
-  });
 
-  this.profService.getProfRepos().subscribe(repos => {
-    console.log(repos);
-    this.repos = repos;
+}
+ findProf(){
+this.profService.updateProf(this.username);
+this.profService.getProfInfo().subscribe(prof => {
+  console.log(prof)
+  this.prof = prof;
+});
 
- });
+this.profService.getProfRepos().subscribe(repos => {
+  console.log(repos);
+  this.repos = repos;
+
+});
+
+
   }
   ngOnInit(){
   }
