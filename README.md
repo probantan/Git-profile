@@ -1,20 +1,20 @@
-# GitProfile
+## GitProfile
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
+Protus Oduor
 
-## Development server
+## Link
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+You can view my Application live on https://probantan.github.io/Git-profile/
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+For the App to work then you have to install Node ang Angular on yiur machine...When all is done, you can clone the application by running git@github.com:probantan/Git-profile.git on the terminal to your local maching..to run the app on your browser just run ng -serve on the commandline
 
-## Build
+## Project Description
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+This project allows the user to enter their Github names...After entering their names then they should be able to see their updated repos and be able to aslo see their githurb profile...If need be, they can go ahead and look for their friends on github as well...
 
-## Running unit tests
+##
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
