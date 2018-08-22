@@ -16,7 +16,15 @@ This project allows the user to enter their Github names...After entering their 
 
 ## Technology used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Angular framework has been used in the development of this project and the languages used include
+
+TypeScript used for functionality of the app
+
+CSS is used for styling the app
+
+Html Markup and has been used to structure the the app
+
+bootstrap css framework has been used for the styling as well
 
 ## Running end-to-end tests
 
