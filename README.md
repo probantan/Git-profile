@@ -27,3 +27,5 @@ Html Markup and has been used to structure the the app
 bootstrap css framework has been used for the styling as well
 
 ## License
+
+Copyright (c) {2018} **{Moringa School}**
