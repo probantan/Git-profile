@@ -14,7 +14,7 @@ For the App to work then you have to install Node ang Angular on yiur machine...
 
 This project allows the user to enter their Github names...After entering their names then they should be able to see their updated repos and be able to aslo see their githurb profile...If need be, they can go ahead and look for their friends on github as well...
 
-##
+## Technology used
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
