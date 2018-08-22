@@ -27,5 +27,3 @@ Html Markup and has been used to structure the the app
 bootstrap css framework has been used for the styling as well
 
 ## License
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
